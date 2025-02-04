@@ -20,18 +20,13 @@ package frc.robot;
  * constants are needed, to reduce verbosity.
  */
 public class Constants {
-   /**
-    * public static final class DriveConstants {
-    *   public static final int kLeftMotor1Port = 0;
-    *   public static final int kLeftMotor2Port = 1;
-    *   public static final int kRightMotor1Port = 2;
-    *   public static final int kRightMotor2Port = 3; 
-    * }
-    */ 
-    public static final class wristMotor {
-        public static final double rotationCenterAligned = 0; //0 degree rotation
-        public static final double rotationRightAligned = 5; //90 degree rotation
-        public static final double rotationLeftAligned = 10; //180 degree rotation
+
+    public static final class WristConstants {
+
+        public static final double wristMotorGearRatio = 8; //X input rotations for each output rotation
+    
+        public static final double rotationVerticalAlligned = wristMotorGearRatio * 0.5;
+        public static final double rotationHorizontalAlligned = wristMotorGearRatio * 0;
     }
 }
 
