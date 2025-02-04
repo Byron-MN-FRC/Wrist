@@ -28,5 +28,10 @@ public class Constants {
     *   public static final int kRightMotor2Port = 3; 
     * }
     */ 
+    public static final class wristMotor {
+        public static final double rotationCenterAligned = 0; //0 degree rotation
+        public static final double rotationRightAligned = 5; //90 degree rotation
+        public static final double rotationLeftAligned = 10; //180 degree rotation
+    }
 }
 
